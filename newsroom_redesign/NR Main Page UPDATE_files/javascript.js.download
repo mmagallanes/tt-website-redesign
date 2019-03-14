@@ -1,0 +1,55 @@
+/* ------------------------------ .carousel speed ------------------------------ */
+
+    $('#home #featured-content.carousel').carousel({
+        interval: 8000
+    });
+	
+/* ------------------------------ navbar search form ------------------------------ */
+	
+	// Remove Search if user Resets Form or hits Escape!
+	$('.navbar form[role="search"] button[type="reset"]').on('click keyup', function(event) {
+		console.log(event.currentTarget);
+		if (event.which == 27 && $('.navbar form[role="search"]').hasClass('active') ||
+			$(event.currentTarget).attr('type') == 'reset') {
+			closeSearch();
+		}
+	});
+
+	function closeSearch() {
+		var $form = $('.navbar form[role="search"].active')
+		$form.find('input').val('');
+		$form.removeClass('active');
+	}
+
+	// Show Search if form is not active // event.preventDefault() is important, this prevents the form from submitting
+	$(document).on('click', '.navbar form[role="search"]:not(.active) button[type="submit"]', function(event) {
+		event.preventDefault();
+		var $form = $(this).closest('form'),
+			$input = $form.find('input');
+		$form.addClass('active');
+		$input.focus();
+	});
+
+/* ------------------------------ Reuse #modal ------------------------------ */
+
+    $('#modal').on('hide', function () {
+        $(this).removeData('modal');
+        console.log('on hide modal fun')
+    });
+	
+/* ------------------------------ #home-video ------------------------------ */
+	
+	var youtubeLink = $( "div.modal-body div.video iframe" ).attr( "src" );
+
+    $('#home-video').on('show', function () {
+        $('div.modal-body div.video iframe').attr('src', youtubeLink);
+        console.log('on show');
+    });
+	$('#home-video').on('hide', function () {
+        $('div.modal-body div.video iframe').removeAttr('src');
+        console.log('on hide');
+    });
+    $('#home-video').on('hidden.bs.modal', function(e){
+    	$("#home-video iframe").attr("src", $("#home-video iframe").attr("src"));
+    	console.log('on hidden');
+    });

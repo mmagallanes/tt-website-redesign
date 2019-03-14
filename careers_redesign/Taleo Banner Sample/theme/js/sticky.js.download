@@ -1,0 +1,9 @@
+$(document).ready(function(){
+    var element = document.getElementById("topnav");
+    var swapclassname = "navbar-static-top vertmargin-reset";
+    element.className = element.className.replace(/\bnavbar-fixed-top\b/g, "");
+    var arr = element.className.split(" ");
+    if (arr.indexOf(swapclassname) == -1) {
+        element.className += " " + swapclassname;
+    }
+});

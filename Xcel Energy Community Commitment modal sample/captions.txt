@@ -1,0 +1,12 @@
+<modal>
+<caption> This is for image 1</caption>
+<caption> This is for image 2</caption>
+<caption> This is for image 3 </caption>
+<caption> This is for image 4 </caption>
+<caption> This is for image 5 </caption>
+<caption> This is for image 6 </caption>
+<caption> This is for image 7 </caption>
+<caption> This is for image 8 </caption>
+<caption> This is for image 9 </caption>
+<caption> This is for image 10 </caption>
+</modal>

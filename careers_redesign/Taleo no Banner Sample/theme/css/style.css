@@ -1,0 +1,2003 @@
+﻿/**********************************************************************************/
+/* NOTES */
+
+/* To make branding changes to your site, please search for the header 
+CLIENT CUSTOMIZATIONS and you will find all the styles pertaining to background, 
+font, links and button colors. */
+/**********************************************************************************/
+
+/* Custom Font */
+
+@font-face{font-family:"OpenSans-Regular";font-weight:normal;src:url("../images/OpenSans-Regular.ttf")}
+@font-face{font-family:"OpenSans-SemiBold";font-weight:normal;src:url("../images/OpenSans-Semibold.ttf")}
+@font-face{font-family:"OpenSans-Bold";font-weight:normal;src:url("../images/OpenSans-Bold.ttf")}
+
+
+body, body .masterbody, .alert-frame, .sugInput-sug, .callout, .blockpanel .input-textarea, .blockpanel .input-text, .blockpanel .input-smaller input, .blockpanel .input-select, .blockpanel .input-date-time select, .blockpanel .sugInput-input, .blockpanel .entity-value select, .blockpanel .inputtextmulti, .blockpanel .inputtextmulti2, .mainsection {
+	font-family: "OpenSans-Regular";
+}
+
+body .masterbody {
+	background-color: transparent;
+}
+
+/****************************************************************/
+/* MOBILE */
+/****************************************************************/
+
+@media screen and (max-device-width: 480px){
+    /*--- iPhone only CSS here ---*/
+	@-viewport {
+		width: 480px;
+	}
+
+    body{
+        -webkit-text-size-adjust:none;
+        padding:5px;
+    }
+}
+
+@media screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1){
+	/*iPhone 3g*/
+	 .mainsection .textindentpanel .inputtext300 { width: auto !important;}
+
+	[id*="ResumeParsingBlock-resumeView"] [id*="UploadResumeBlock-ResumeTitleOutputText"] {display:none;}
+	[id*="ResumeParsingBlock-resumeView"] .blockpanel > :nth-last-child(2) {display:none;}
+	[id*="ResumeParsingBlock-resumeView"] .blockpanel > :nth-last-child(3) {display:none;}
+	[id*="ResumeParsingBlock-resumeView"] .blockpanel > :nth-last-child(4) {display:none;}
+	[id*="ResumeParsingBlock-resumeView"] .blockpanel > :nth-last-child(5) {display:none;}
+	[id*="ResumeParsingBlock-resumeView"] .blockpanel > :nth-last-child(6) {display:none;}
+
+	#editTemplateMultipart-editForm-content-ftf-gp-j_id_jsp_1327654778_15pc7-page_0-ResumeParsingBlock-UploadResumeBlock-ResumeTitleOutputText { display:none; } 
+	#editTemplateMultipart-editForm-content-ftf-gp-j_id_jsp_1327654778_15pc7-page_0-ResumeParsingBlock-UploadResumeBlock-resumeUploadRadio_2 { display:none; } 
+	#editTemplateMultipart-editForm-content-ftf-gp-j_id_jsp_1327654778_15pc7-page_0-ResumeParsingBlock-UploadResumeBlock-resumeUploadRadio_2 span { display: none; } 
+	#editTemplateMultipart-editForm-content-ftf-gp-j_id_jsp_1327654778_15pc7-page_0-ResumeParsingBlock-UploadResumeBlock-ResumeUploadInputFile { display:none; } 
+	#editTemplateMultipart-editForm-content-ftf-gp-j_id_jsp_1327654778_15pc7-page_0-ResumeParsingBlock-UploadResumeBlock-NoteOutputText { display:none; } 
+
+
+}
+
+
+@media screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2){
+    /* iPhone 4 */ 
+    .mainsection .textindentpanel .inputtext300 { width: auto !important;}
+
+	[id*="ResumeParsingBlock-resumeView"] [id*="UploadResumeBlock-ResumeTitleOutputText"] {display:none;}
+	[id*="ResumeParsingBlock-resumeView"] .blockpanel > :nth-last-child(2) {display:none;}
+	[id*="ResumeParsingBlock-resumeView"] .blockpanel > :nth-last-child(3) {display:none;}
+	[id*="ResumeParsingBlock-resumeView"] .blockpanel > :nth-last-child(4) {display:none;}
+	[id*="ResumeParsingBlock-resumeView"] .blockpanel > :nth-last-child(5) {display:none;}
+	[id*="ResumeParsingBlock-resumeView"] .blockpanel > :nth-last-child(6) {display:none;}
+
+	#editTemplateMultipart-editForm-content-ftf-gp-j_id_jsp_1327654778_15pc7-page_0-ResumeParsingBlock-UploadResumeBlock-ResumeTitleOutputText { display:none; } 
+	#editTemplateMultipart-editForm-content-ftf-gp-j_id_jsp_1327654778_15pc7-page_0-ResumeParsingBlock-UploadResumeBlock-resumeUploadRadio_2 { display:none; } 
+	#editTemplateMultipart-editForm-content-ftf-gp-j_id_jsp_1327654778_15pc7-page_0-ResumeParsingBlock-UploadResumeBlock-resumeUploadRadio_2 span { display: none; } 
+	#editTemplateMultipart-editForm-content-ftf-gp-j_id_jsp_1327654778_15pc7-page_0-ResumeParsingBlock-UploadResumeBlock-ResumeUploadInputFile { display:none; } 
+	#editTemplateMultipart-editForm-content-ftf-gp-j_id_jsp_1327654778_15pc7-page_0-ResumeParsingBlock-UploadResumeBlock-NoteOutputText { display:none; } 
+
+}
+
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2){
+    /* iPhone 5 */ 
+    .mainsection .textindentpanel .inputtext300 { width: auto !important;}
+
+	[id*="ResumeParsingBlock-resumeView"] [id*="UploadResumeBlock-ResumeTitleOutputText"] {display:none;}
+	[id*="ResumeParsingBlock-resumeView"] .blockpanel > :nth-last-child(2) {display:none;}
+	[id*="ResumeParsingBlock-resumeView"] .blockpanel > :nth-last-child(3) {display:none;}
+	[id*="ResumeParsingBlock-resumeView"] .blockpanel > :nth-last-child(4) {display:none;}
+	[id*="ResumeParsingBlock-resumeView"] .blockpanel > :nth-last-child(5) {display:none;}
+	[id*="ResumeParsingBlock-resumeView"] .blockpanel > :nth-last-child(6) {display:none;}
+
+	#editTemplateMultipart-editForm-content-ftf-gp-j_id_jsp_1327654778_15pc7-page_0-ResumeParsingBlock-UploadResumeBlock-ResumeTitleOutputText { display:none; } 
+	#editTemplateMultipart-editForm-content-ftf-gp-j_id_jsp_1327654778_15pc7-page_0-ResumeParsingBlock-UploadResumeBlock-resumeUploadRadio_2 { display:none; } 
+	#editTemplateMultipart-editForm-content-ftf-gp-j_id_jsp_1327654778_15pc7-page_0-ResumeParsingBlock-UploadResumeBlock-resumeUploadRadio_2 span { display: none; } 
+	#editTemplateMultipart-editForm-content-ftf-gp-j_id_jsp_1327654778_15pc7-page_0-ResumeParsingBlock-UploadResumeBlock-ResumeUploadInputFile { display:none; } 
+	#editTemplateMultipart-editForm-content-ftf-gp-j_id_jsp_1327654778_15pc7-page_0-ResumeParsingBlock-UploadResumeBlock-NoteOutputText { display:none; } 
+
+}
+
+
+#contentarea {
+	clear:both!important;
+    display:block!important;
+    width:100%!important;
+    float:none!important;
+    margin:0!important;
+    padding:0!important;
+}
+.info-panel-title {
+	font-weight: normal !important;
+	font-size: 110% !important;
+	padding-left: 0 !important;
+}
+.paging-info-data {
+	font-weight: normal !important;
+	font-size: 90%;
+}
+/*Footer*/
+ .mainsection .footeraction .footeractionpanel{
+	background-color:#fff!important;
+	height: 100px;
+}
+
+
+/*terms of service */
+.masterbody .mainsection .metapanel2{
+	background-color:#555!important;
+}
+.masterbody .mainsection .metapanel2 .metalink2 a{
+	color:white!important;
+}
+/*Terms of Use/Privacy Statement back link*/
+.masterbody .mainsection .mastercontentpanel2 .blockpanel .metapanel2 .metalink2 a, .masterbody .mainsection .metagrouppanel .metapanel2 .metalink2 a{
+	background-color:#fff;
+	color:#1F4F82!important;
+	padding-left:5px;
+}
+.masterbody .mainsection .mastercontentpanel2 .blockpanel .metagrouppanel .hidden-audible{
+	display:none !important;
+}
+/* return to homepage*/
+.masterbody .mainsection .requisitionDescription #requisitionDescriptionInterface .metalink2 a{
+	background-color:#fff;
+	color:#1F4F82;
+}
+
+#requisitionDescriptionInterface .metapanel2{
+	background-color:#fff!important;
+}
+
+/*Qualifications and Skills dropdown/textarea*/
+
+.no-border .textindentpanel textarea, .no-border .textindentpanel select{
+	max-width:250px;
+}
+
+/*pagination*/
+.buttongrouppanel2 .rightpanel .flowstatus{
+	color: #444444;
+}
+
+/*Education and Work content*/
+.blockpanel .custom-form-grid .entity-block .entity-label .entity-select-action{
+	display:none!important;
+}
+/* Education Level Dropdown*/
+.blockpanel .input-select { max-width: 85%; }
+/*My Submissions/Job Cart*/
+.mastercontentpanel2{padding-left:0px!important;}
+
+/*Alert Session Message*/
+.alert-frame{
+	width: 90%!important;
+	margin: 16px!important;
+	border-radius: 4px;
+	background-color: #424446;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-apple-border-radius: 4px;
+	box-shadow: 0 0 0 7px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 0 7px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0 0 7px rgba(0, 0, 0, 0.2);
+}
+
+.alert-message-notification.alert-message-notification-pane {
+	max-height: 350px;
+	overflow: auto;
+	padding: 10px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+/*Personal Information bottom question asterisk*/
+
+.input-hier .entity-label{
+	min-width:140px
+}
+
+.custom-form-columns .entity-block .mandatory-img+br{
+	display:none;
+}
+
+.footeractionpanel{
+	background-color:#fff;
+}
+.mainsection .footeraction {
+	border-top: 1px solid #ccc;
+	display: block;
+	padding-bottom: 0;
+}
+.metapanel2{
+	background-color:#555;
+	color:white;
+}
+
+/*Education and Work*/
+.blockpanel .custom-form-grid .entity-block .entity-label .entity-select-action{
+	display:none;
+}
+/* Education Level Dropdown*/
+.blockpanel .input-select { max-width: 85%; }
+/*My Submissions/Job Cart*/
+.mastercontentpanel2{padding-left:0px;}
+
+/*Profile wizard*/
+.datatrain-table {
+	display: none;
+}
+
+/*auto suggest fields*/
+.sugInput-input { font-size: 1.1em !important; }
+
+
+/****************************************************************/
+/* GENERAL */
+/****************************************************************/
+
+body {
+	background: #ffffff; 
+	color: #555;
+	margin:0;
+	padding:0;
+	border: 0px none;
+	font-size: 11px;
+}
+
+body .masterbody, .mainsection .mastercontentpanel, .mainsection .mastercontentpanel2, .jobsearch .resultpropertiescontentpanel, .jobsearch .boxresultsb2, .jobsearch .boxresultsb3, .jobsearch .boxresultsb4, .headersection .link2panel .link2 a:hover, .jobsearch .tablelistradius, .processesNotSelectedTaskItem td:hover, .processes-table-link td:hover {
+	background-color: transparent;
+}
+
+/* GAP ON THE RIGHT SIDE */
+body { width: 100%; }
+
+.mainsection { margin: 0px; }
+
+/*Titles*/
+h1, .no-change-header {
+	font-family: "OpenSans-Bold";
+	font-weight: normal;
+}
+
+h1 span {
+	font-weight: normal;
+}
+
+.myaccount .title, .myaccount .titleaction, .mainsection .titlepage, .accessmanagement .page-heading-header-title, .myaccount .titleblock, .summary .titleblock {
+	font-weight: normal;
+}
+
+/*Link colors*/
+a:link, a:visited {
+	color: #1F4F82;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #1F4F82;
+	text-decoration: underline;
+}
+
+.show-more-link {color: #9c510d;}
+
+
+.mainsection .metalink2 a, .mainsection .pagerpanel .pagersectionpanel .pagerlink a, .blockpanel .loc-action-btn a, .mainsection .textlink a, .myaccount .metalink2 a, .accessmanagement .link-small a, .blockpanel .list .listpanel .metalink2 a, .footersection .poweredbytaleolink a, .messagecenter .toolbar a, .messagecenter .list-column a, .alert-button-panel a, .messagecenter .section-name a {
+    color: #1F4F82;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.mainsection .metalink2 a:hover, .mainsection .pagerpanel .pagersectionpanel .pagerlink a:hover, .blockpanel .loc-action-btn a:hover, .mainsection .textlink a:hover, .myaccount .metalink2 a:hover, .accessmanagement .link-small a:hover, .blockpanel .list .listpanel .metalink2 a:hover, .footersection .poweredbytaleolink a:hover, .messagecenter .toolbar a:hover, .messagecenter .list-column a:hover, .alert-button-panel a:hover, .messagecenter .section-name a:hover {
+    color: #1F4F82;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: underline;	
+}
+
+.headersection .headerpanel .metapanel .metalinkimg {
+	background: none #eee;
+	border-radius: 15px;
+	padding: 2px 0 0 5px;
+	margin-right: 4px;
+	display: none; /*hide job cart*/
+}
+
+/* Continue and cancel buttons*/
+#et-ef-content-flowTemplate-LegalDisclaimerPage-legalDisclaimerContinueButton,
+#et-ef-content-flowTemplate-LegalDisclaimerPage-CancelButton, 
+#dialogTemplate-dialogForm-StatementBeforeAuthentificationContent-ContinueButton, 
+#dialogTemplate-dialogForm-StatementBeforeAuthentificationContent-CancelButton, 
+.mainsection .inputbutton, .accessmanagement .nav-btn {
+	background-color: #E5E5E5;
+	border: 1px solid #949494;
+	color: #444444;
+	font-family: 'OpenSans-SemiBold',Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 15px;
+	padding: 8px 11px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	-moz-user-select: none;
+	background-clip: padding-box;
+	border-radius: 3px 3px 3px 3px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35) inset, 0 1px 0 rgba(0, 0, 0, 0.18);
+	cursor: pointer;
+	font-weight: normal;
+	overflow: hidden;
+	text-decoration: none;
+	-webkit-appearance: none;
+	clear: both;
+    margin:0 10px 1px 0;
+    width: 100%;
+}
+
+#editTemplateMultipart-editForm-content-ftf-saveAsDraftCmd,
+#editTemplateMultipart-editForm-content-ftf-saveAsDraftCmdBottom,
+#et-ef-content-ftf-saveAsDraftCmd { margin:0 10px 7px 0; }
+
+#dialogTemplate-dialogForm-legalDisclaimer-acceptCmd { margin-bottom:5px; }
+
+/*input boxes*/
+.mainsection .inputbutton:focus, .accessmanagement .nav-btn:focus, .mainsection .inputbutton:active, .accessmanagement .nav-btn:active {
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset;
+	text-decoration: none;
+}
+
+.mainsection .inputbutton:hover, .accessmanagement .nav-btn:hover {
+	background-color: #dbd8d8;
+}
+
+.mainsection .iconpanelupdated, .mainsection .iconcontentpanelupdated, .headersection .link2panel, .mainsection .myjobpage .messagenotepanel, .headerpanel .datatrain-t, .headerpanel .datatrain-tv, .headerpanel .datatrain-tv-left-margin, .headerpanel .datatrain-tv-right-margin, .alert-message-notification, .shiftavailability .allshiftpanel, .shiftavailability .alldaypanel, .myaccount .headerblockpanel, .summary .headerblockpanel, .jobsearch .linkpanel, .jobsearch .boxpanelb2-top, .jobsearch .boxpanelb3-top, .jobsearch .boxpanelb4-top, .processesNotSelectedTaskItem td, .processes-table-link {
+	background-color: #fafafa;
+}
+
+.jobsearch .topSearchPanel .search-button {
+	background-color: #D9D9D9;
+	border: 1px solid #333;
+	border-radius: 4px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	padding: 15px 17px 15px;
+	background-clip: padding-box;
+	-webkit-background-clip: padding-box;
+	margin: 0;
+	float: right;
+}
+
+#jobsTableContainer th {
+	border-bottom: 1px solid #d9d9d9;
+	color: #444;
+}
+
+.mainsection .tablelist {
+    margin-left: 10px;
+}
+
+.mainsection .requisitionDescription .tablelist {
+	margin-left: 0px;
+}
+
+fieldset.input-hier {
+    background-color: #F4F4F4;
+    border: 0 none transparent;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 2px #ccc inset;
+	width: 235px;
+	padding: 10px;
+}
+
+fieldset.input-hier label.entity-label {
+	font-weight: bold !important;
+	font-size: 1.4em;
+	color: #222;
+}
+
+.input-date-time.entity-value {
+    width: 250px;
+}
+
+/* my job cart page message */
+.mainsection .myjobpage .messagenotepanel {
+    margin: 6px 0 16px 5px !important; 
+} 
+
+/****************************************************************/
+/* SPECIFIC FIXES */
+/****************************************************************/
+
+/* FIX FOR IPHONE and Faceted Search Criteria Panel */
+.topSearchPanel { overflow: hidden; }
+
+/* ALL Headers - Fixed in 13A */
+.no-change-header { font-size: 1em; padding: 0px 0px 0px 0px; }
+
+.legend-pos { margin-left: 0px; }
+
+
+/****************************************************************/
+/* RESUME UPLOAD - Removes possibility to upload resume, but allows import profile from linked in */ 
+/****************************************************************/
+
+.mainsection .textindentpanel .inputtext300 { width: auto !important;}
+
+/****************************************************************/
+/* FACETED SEARCH PAGE */
+/****************************************************************/
+
+/* Progress Indicator */
+.progress-indicator { display: none; }
+
+/* Hide Tell Us Friend from the bottom of result list*/
+#searchresults #additionalLinks { display: none;}
+
+/* Hide Sort Panel */
+#sortPanel { display: none;}
+
+
+
+/* Hide links: View all jobs, Advanced search */
+.search-panel-links-container { display: none; }
+
+
+/* Job card items link */
+.header-actions { margin-right: 0px;}
+.headerpanel .right-header-info .jobcart-items a { color: #333; text-decoration: none;}
+.headerpanel .right-header-info .jobcart-items a:HOVER { color: #333; text-decoration: none;}
+.jobcart-items { display: none; text-align: right;}
+
+/* Job Openings */
+.jobsearch .info-panel { width: 95%; }
+.info-panel-title { font-size: 100%; padding: 0px; }
+.info-panel-title { font-size: 0.9em !important; }
+
+/* Criteria Panel */
+.topSearchContainer {
+	padding: 5px !important;
+}
+.topSearchContainer:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.search-button { width: auto; }
+
+
+.criteria-field {
+    background: none repeat scroll 0 0 padding-box #DDDDDD;
+    border: 1px solid #333333;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 0 0 0 9px;
+    text-shadow: 0 1px 0 #fff;
+	box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5) inset;
+	-webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5) inset;
+	background-clip: padding-box;
+	-webkit-background-clip: padding-box;
+}
+
+/* Smaller Search Button on the right side */
+.criteria-field.search-button-container {
+	padding: 0;
+	border: 0 none transparent;
+	background-color: transparent;
+	box-shadow: 0 0 0 transparent;
+	-webkit-box-shadow: 0 0 0 transparent;
+	float: right;
+	margin-left: 4px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
+.criteria-fields {
+    padding: 0;
+    white-space: nowrap;
+	position: relative;
+}
+.criteria-fields:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.resultListPanel .list-top-panel {
+	border: 0px none transparent;
+	border-bottom: 1px solid #777;
+}
+
+.page-info-panel.subtitle {
+    color: #333333;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.info-panel-title {
+	font-weight: normal;
+}
+
+.paging-info-data {
+	font-weight: normal;
+}
+
+/* Popup Messages */
+.messageerrorpanel { width: auto !important; }
+.messageerrorpanel, .message-error { margin: 15px; }
+.popup-overlay { width: 100% !important; }
+
+/* List Column Header alignment */
+#jobs th:nth-child(3) {
+	text-align: right;
+	padding-right: 56px;
+}
+
+/****************************************************************/
+/* LOGIN PAGE */
+/****************************************************************/
+
+/* LOGIN PAGE - right margin*/ 
+.accessmanagement .block-main-border-fix { margin-right: 20px; padding-left: 10px; }
+
+/* Removed all openid vendors exept for Google (the second one in this case) */
+.dialog-columns-openid .table-columns-openid tr td { /*display: none;*/ }
+.dialog-columns-openid .table-columns-openid tr td:nth-child(2) { display: table-cell; }
+
+/* Add padding between buttons and bottom of page */
+.accessmanagement .button-group-center { padding-bottom: 15px; padding-left: 10px; }
+
+
+/****************************************************************/
+/* OTHER PAGES AND FLOW */
+/****************************************************************/
+
+/* Header for Flow */
+
+.mainsection .headerpanel {
+	padding: 0;
+	border: none;
+	padding: 0px;
+	background-color: #e9e9e9;
+	margin-top: -1px;
+	border-bottom: 1px solid #ccc;
+	position: static;
+}
+/* Job title on flow header */
+.headerpanel .infopanel {
+    float: none !important;
+    padding: 15px 10px;
+    width: auto !important;
+}
+
+/* Button Layout (Save and Continue etc.)  */
+.mainsection .headerpanel .buttonpanel-container {
+	background-color: #fff;
+	padding: 15px;
+	border-top: 1px solid #ccc;
+}
+.on-the-left { float: none; }
+
+
+/* Hide Help Panel for flow */
+.column165 .helppanel { display: none;}
+
+/* The same button on footer  */
+.mainsection .footeractionpanel { height: auto; }
+.footeraction .footeractionpanel {
+	background-color: #555;
+}
+.footeraction .box .boxbottom { display: none; }
+
+.blockpanel .entity-block {
+	margin: 13px 0 6px;
+}
+
+/* Flow status in one line */
+.metapanel .flowstatus { display: block; }
+
+/* Pager layout */
+.pagerpanel { margin-bottom: 20px; }
+.mainsection .pagerpanel .pagersectionpanel .pagerlabel { display: block;}
+
+/* Hide Print/Email Links */
+.mainsection .metapanel .separator { display: none; }
+.mainsection .metapanel .metalink { display: none; }
+.mainsection .metapanel { display: none; }
+
+/* Removed white board on page caused by hidden form */
+#ftlhiddenframe { position: fixed; }
+
+/* Fixed too long inputs  */
+.blockpanel .input-select { width: 100%; }
+
+/* Section Headers - Removed Rounded Corners */
+.mainsection .boxtrain { display: none; }
+.headersection .box { display: none; }
+
+
+.mainsection .columnfull { padding-right: 0px; }
+
+/*hide magnifying class image on Job Search tab */
+.headersection .headerpanel .linkpanel .magnifierimg {
+       display: none;
+}
+
+/* Job cart and logout button */
+.headersection .headerpanel .metapanel .metagrouppanel .metalink a { white-space: nowrap; font-size: 1em; }
+.headersection .headerpanel .metapanel .metagrouppanel .separator {visibility: hidden; display: block; height: 0px;}
+
+/* Container for first level tabs */
+.headersection .headerpanel .linkpanel .selectedlink { padding: 5px 8px; }
+
+.headersection .headerpanel .linkpanel li.selectedlink { margin: 7px 11px 5px 3px !important; }
+
+html > body .headersection .headerpanel .linkpanel .link { padding: 5px 8px; }
+
+html > body .headersection .headerpanel .linkpanel li.link { margin: 7px 11px 5px 3px !important; }
+
+/* Container for second level tabs */
+.headersection .link2panel { padding: 0px; }
+
+/* Second level links 
+.headersection  .link2panel .link2 a { padding: 4px 8px 6px; }
+.headersection  .link2panel .link2 a:hover { text-decoration: none;}
+.headersection .link2panel .selectedlink2 { padding: 4px 8px 6px; border-width: 0px;}
+*/
+.headersection .link2panel .link2 {
+    border: 0 none;
+    display: inline;
+    float: left;
+    margin: 9px 6px;
+    padding: 0;
+}
+.headersection .link2panel .link2 a {
+	padding: 0;
+}
+
+.headersection .link2panel .selectedlink2 a, .headersection .link2panel .selectedlink2 span {
+	color: #fff;
+}
+
+
+.headersection .link2panel .separatorlink2 {
+    color: #808080;
+    display: inline;
+    float: left;
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: normal;
+    margin: 9px 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.headersection .link2panel .selectedlink2 {
+    background-color: #404040;
+    border-color: transparent;
+    border-radius: 4px 4px 4px 4px;
+    border-style: none;
+    border-width: 0px;
+    display: inline;
+    float: left;
+    margin: 4px 6px;
+    padding: 5px;
+    position: relative;
+}
+
+.headersection .link2panel:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+
+.blockpanel .descriptionpanel .text, .myaccount .text, .shiftavailability .shiftcontentpanel, .shiftavailability .daycontentpanel, .alert-message, .mainsection .text, .accessmanagement .page-header-text {
+	line-height: 145%;
+	font-size: 1em;
+}
+
+
+/* Hide borders */
+.headersection  .headerpanel { border: none; }
+.mainsection .mastercontentpanel { border: none; }
+.footeraction .footeractionpanel { border: none; }
+
+/****************************************************************/
+/* HEADER PANEL PMG ROUNDED STYLE */
+/****************************************************************/
+
+/*The main header container*/ 
+.headersection .headerpanel {
+	background-color: #606060;
+	padding: 0px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
+	position: relative;
+	z-index: 2;
+}
+
+.headersection .headerpanel .linkpanel:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+.headersection .headerpanel .linkpanel {
+	padding: 0px 2px;
+	margin: 0;
+	position: static;
+	background-color: #ffffff;
+	float: none;
+	border-bottom: 1px solid #E0E0E0;
+}
+
+.linkpanel li {
+	float: left;
+	margin: 5px 3px;
+}
+
+.headersection .headerpanel .linkpanel .link, .headersection .headerpanel .linkpanel .selectedlink {
+	background-color: transparent;
+	border-radius: 3px;
+	float: left;
+	padding: 5px 8px !important;
+	margin: 0 !important;
+	z-index: 2;
+	position: relative;
+	border: 0 none transparent;
+	text-transform: uppercase;
+}
+
+.headersection .headerpanel .linkpanel .selectedlink {
+	background-color: #e80b0b;  /* --- ~~~ BACKGROUND COLOR FOR SELECTED LINK ~~~~~ ----*/
+	text-shadow: 0 1px 0 #000;
+	color: #FFFFFF;
+}
+
+.headersection .headerpanel .linkpanel .selectedlink a, .headersection .headerpanel .linkpanel .selectedlink span { 
+	color: #FFFFFF !important;
+	 font-size: 0.8em;
+}
+
+.headersection .headerpanel .linkpanel .link a { 
+	color: #1F4F82;
+	font-size: inherit !important;
+}
+
+.headersection .headerpanel .linkpanel .grouplink {
+	margin-left: 0px;
+}
+
+html > body .headersection .headerpanel .linkpanel .link a {
+	padding: 0;
+}
+
+
+.headersection .link2panel {
+	border: 0px none transparent;
+    display: block;
+	border-bottom: 1px solid #ccc;
+}
+
+
+/* Container for first level tabs */
+.headersection .headerpanel .linkpanel .selectedlink { padding: 5px 8px; }
+
+.headersection .headerpanel .linkpanel li.selectedlink { margin: 5px 3px !important; }
+
+html > body .headersection .headerpanel .linkpanel .link { padding: 5px 8px; }
+
+html > body .headersection .headerpanel .linkpanel li.link { margin: 5px 3px !important; }
+
+/*Container for second level tabs */
+.headersection .link2panel { padding: 0px; }
+
+.masterbody .jobsearch {
+	font-size: 17px;
+}
+
+
+/*  ----- CLIENT SPECIFIC ------ */
+
+/* Sub nav and search panel */
+
+.jobsearch .topSearchPanel {
+	background-color: #606060;
+	color: #333;
+	font-size: 14px;
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+	margin: 0;
+	padding: 0;
+}
+
+.jobsearch .multiline-icon-container {
+	margin-left: 10px;
+    position: relative;
+}
+
+.multiline-data-container {margin-left: 10px;}
+
+.criteria-field {margin: 3px 5px 3px 0;}
+
+/*auto suggest*/
+
+.ui-autocomplete {
+    max-width: 200px !important;
+    max-height: 210px;
+    overflow: scroll;
+}
+
+
+/* -- Search page Apply button --*/
+.jobListPanel .result-list-button {
+	background-color: #1F4F82;
+}
+
+#et-ef-content-ftf-gp-j_id_jsp_126727025_15pc7-page_0-diversityBlock-j_id_jsp_60722238_11pc8-0-j_id_jsp_60722238_14pc8-1-questionSingleList {width: 280px;}
+
+#requisitionDescriptionPrintableInterface h1.no-change-header div span.subtitle  {display: none;}
+
+/*Link color */
+.list-format-switch, .absolute > a  {
+	color: #1F4F82;
+}
+
+.mainsection .titlelink a, .jobsearch .titlelink a {
+color: #1F4F82; } 
+
+.mainsection .jobcontentpanel .metalink2 a {
+color: #1F4F82;
+}
+
+.masterbody .mainsection .mastercontentpanel2 .blockpanel .metapanel2 .metalink2 a, .masterbody .mainsection .metagrouppanel .metapanel2 .metalink2 a {
+color: #1F4F82!important; } 
+
+/* - Logo Area - */
+.logo_hldr {
+    padding: 5px 8px;
+    text-align: center;
+	display: block;
+	background-color: #E7E7E7;
+}
+.logo_hldr:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.logo_hldr .logo_img {
+	display: block;
+	float: left;
+	margin: 0 auto;
+	border: 0 none transparent;
+}
+
+
+
+/****************************************************************/
+/* HEADER PANEL */
+/****************************************************************/
+
+/* The main header container */
+.headersection .headerpanel {
+	background-color: #fff;
+	padding: 0px;
+	/*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.5) inset;*/
+}
+
+
+.linkpanel li {
+	float: left;
+	margin: 5px 11px 5px 3px;
+}
+
+
+
+.headersection .headerpanel .linkpanel .grouplink {
+	margin-left: 0px;
+}
+
+html > body .headersection .headerpanel .linkpanel .link a {
+	padding: 0;
+	font-size: 1.1em !important;
+}
+
+
+.headersection .link2panel {
+	border: 0px none transparent;
+    display: block;
+	border-bottom: 1px solid #aaa;
+}
+
+
+/*Job Detail page*/
+#requisitionDescriptionInterface .metalink2 a {
+	color: #1F4F82;
+	padding-top: 10px;
+	display: inline-block;
+}
+
+.requisitionDescription {
+    margin-left: 10px;
+}
+
+.mainsection .requisitionDescription .inputbutton {
+	margin-bottom: 10px;
+}
+
+.mainsection .requisitionDescription .editablesection .subtitle {
+    display: none;
+}
+
+.mainsection .requisitionDescription .subtitle {
+    display: none;
+}
+
+.mainsection .requisitionDescription .contentlinepanel {
+	color: #777;
+	font-size: 12px;
+}
+
+.mainsection .requisitionDescription .contentlinepanel .titlepage {
+	color: #777;
+	font-weight: normal;
+}
+
+.mainsection .requisitionDescription .contentlinepanel > .titlepage:first-child {
+	color: #333;
+	font-size: 22px;
+	display: block;
+	margin-bottom: 6px;
+	font-weight: bold;
+}
+
+.mainsection .requisitionDescription .editablesection .contentlinepanel font {
+	font-size: 15px;
+	line-height: 135%;
+}
+
+
+/*Search*/
+#criteriaFields .criteriaFieldInput {
+    border-color: transparent transparent transparent #999999;
+    border-image: none;
+    border-radius: 0 4px 4px 0;
+    border-style: none none none solid;
+    border-width: 0 0 0 1px;
+    box-shadow: 0 1px 2px #888888 inset;
+-webkit-box-shadow: 0 1px 2px #888888 inset;
+    font-weight: normal;
+    height: 25px;
+    line-height: 24px;
+    margin-left: 3px;
+    width: 180px;
+	background-clip: padding-box;
+	-webkit-background-clip: padding-box;
+}
+
+/* Header Adjustments */
+
+#headerPanelContainer .right-header-info .username-button { 
+	font-size: 1em;
+	color: #333;
+	font-weight: normal;
+	padding: 0px 18px 0px 10px !important;
+	display: block;
+	/*This Makes the Down arrow appear again*/
+	/*background: url("../images/arr_down.png") no-repeat scroll right center transparent !important;*/
+	/*padding: 0px;*/
+}
+
+.header-actions.open {
+	position: static;
+}
+
+/****************************************************************/
+/* SPECIFIC FIXES */
+/****************************************************************/
+
+/* FIX FOR IPHONE and Faceted Search Criteria Panel */
+.topSearchPanel { overflow: hidden; }
+
+/* ALL Headers - Fixed in 13A */
+.no-change-header { font-size: 1em; padding: 0px 0px 0px 0px; margin-right: 10px; }
+
+.legend-pos { margin-left: 0px; }
+
+/****************************************************************/
+/* LOGIN PAGE */
+/****************************************************************/
+
+/* LOGIN PAGE - right margin*/ 
+.accessmanagement .block-main-border-fix { margin-right: 20px; }
+
+/* Removed all openid vendors exept for Google (the second one in this case) */
+.dialog-columns-openid .table-columns-openid tr td { /*display: none;*/ }
+.dialog-columns-openid .table-columns-openid tr td:nth-child(2) { display: table-cell; }
+
+
+/****************************************************************/
+/* OTHER PAGES AND FLOW */
+/****************************************************************/
+
+/* Header for Flow */
+
+.mainsection .headerpanel {
+	padding: 0;
+	border: none;
+	padding: 0px;
+	background-color: #e9e9e9;
+	margin-top: -1px;
+	border-bottom: 1px solid #ccc;
+	position: static;
+}
+/* Job title on flow header */
+.headerpanel .infopanel {
+    float: none !important;
+    padding: 15px 10px;
+    width: auto !important;
+}
+
+/* Button Layout (Save and Continue etc.)  */
+.mainsection .headerpanel .buttonpanel-container {
+	background-color: #fff;
+	padding: 15px;
+	border-top: 1px solid #ccc;
+	height: auto;
+}
+.on-the-left { float: none; }
+
+
+/* Hide Help Panel for flow */
+.column165 .helppanel { display: none;}
+
+/* The same button on footer  */
+.mainsection .footeractionpanel { height: auto; }
+.footeraction .footeractionpanel {
+	background-color: #555;
+}
+.footeraction .box .boxbottom { display: none; }
+
+/* Smaller margins for main content */
+.mainsection .mastercontentpanel { padding: 0px 2px 6px 2px; }
+.myaccount .subtitleblockpanel, .summary .subtitleblockpanel { width: 95%; }
+
+/* Flow status in one line */
+.metapanel .flowstatus { display: block; }
+
+/* Pager layout */
+.pagerpanel { margin-bottom: 20px; }
+.mainsection .pagerpanel .pagersectionpanel .pagerlabel { display: block;}
+
+/* Hide Print/Email Links */
+.mainsection .metapanel .separator { display: none; }
+.mainsection .metapanel .metalink { display: none; }
+.mainsection .metapanel { display: none !important; }
+
+/* Removed white board on page caused by hidden form */
+#ftlhiddenframe { position: fixed; }
+
+/* Fixed too long inputs  */
+.blockpanel .input-select { width: 100%; }
+
+/* Section Headers - Removed Rounded Corners */
+.mainsection .boxtrain { display: none; }
+.headersection .box { display: none; }
+
+
+.mainsection .columnfull { padding-right: 0px; }
+
+/*hide magnifying class image on Job Search tab */
+.headersection .headerpanel .linkpanel .magnifierimg {
+       display: none;
+}
+
+/* Job cart and logout button */
+.headersection .headerpanel .metapanel .metagrouppanel .metalink a { white-space: nowrap; font-size: 1em; }
+.headersection .headerpanel .metapanel .metagrouppanel .separator {visibility: hidden; display: block; height: 0px;}
+
+/* Container for first level tabs */
+.headersection .headerpanel .linkpanel .selectedlink { font-size: 1.2em;
+    padding: 9px 13px !important; text-shadow: none; }
+
+#topNavInterface .selectedlink { padding: 3px 8px !important;}
+
+#topNavInterface .headerpanel .linkpanel .link {
+    font-size: 1.2em;
+    padding: 3px 8px !important;
+}
+
+.headersection .headerpanel .linkpanel li.selectedlink { margin: 7px 11px 5px 3px !important; }
+
+html > body .headersection .headerpanel .linkpanel .link {    font-size: 1.2em;
+    padding: 9px 13px !important;}
+
+html > body .headersection .headerpanel .linkpanel li.link { margin: 7px 11px 5px 3px !important; }
+
+/* Container for second level tabs */
+.headersection .link2panel { padding: 0px; }
+
+/* Second level links 
+.headersection  .link2panel .link2 a { padding: 4px 8px 6px; }
+.headersection  .link2panel .link2 a:hover { text-decoration: none;}
+.headersection .link2panel .selectedlink2 { padding: 4px 8px 6px; border-width: 0px;}
+*/
+.headersection .link2panel .link2 {
+    border: 0 none;
+    display: inline;
+    float: left;
+    margin: 9px 6px;
+    padding: 0;
+}
+.headersection .link2panel .link2 a {
+	padding: 0;
+	font-size: 1em;
+}
+
+.headersection .link2panel .selectedlink2 a, .headersection .link2panel .selectedlink2 span {
+	color: #fff;
+	font-size: 1em;
+}
+
+.headersection .link2panel .separatorlink2 {
+    color: #808080;
+    display: inline;
+    float: left;
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: normal;
+    margin: 9px 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.headersection .link2panel .selectedlink2 {
+    background-color: #404040;
+    border-color: transparent;
+    border-radius: 4px 4px 4px 4px;
+    border-style: none;
+    border-width: 0px;
+    display: inline;
+    float: left;
+    margin: 4px 6px;
+    padding: 5px;
+    position: relative;
+}
+
+.headersection .link2panel:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+
+.blockpanel .descriptionpanel .text, .myaccount .text, .shiftavailability .shiftcontentpanel, .shiftavailability .daycontentpanel, .alert-message, .mainsection .text, .accessmanagement .page-header-text {
+	line-height: 165%;
+	font-size: 1em;
+}
+
+
+/* Hide borders */
+.headersection  .headerpanel { border: none; }
+.mainsection .mastercontentpanel { border: none; }
+.footeraction .footeractionpanel { border: none; }
+
+
+/*terms of service page*/
+#et-ef-content-flowTemplate-flowTemplateMainPanel #et-ef-content-flowTemplate-mastercontentpanel2 {
+	margin-left: 5px;
+}
+
+/*  ----- CLIENT SPECIFIC ------ */
+
+/* Sub nav and search panel */
+
+.jobsearch .topSearchPanel {
+	background-color: #606060;
+	color: #333;
+	font-size: 14px;
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* -- Search page Apply button --*/
+.jobListPanel .result-list-button {
+	background-color: #e80b0b;
+}
+
+
+/*Link color */
+.list-format-switch, .absolute > a  {
+	color: #1F4F82;
+}
+
+/* - Logo Area - */
+.logo_hldr {
+    padding: 5px 8px;
+    text-align: center;
+	display: block;
+    background-color: #FFFFFF;
+}
+.logo_hldr:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.logo_hldr .logo_img {
+	display: block;
+	float: left;
+	margin: 0 auto;
+	border: 0 none transparent;
+}
+
+
+
+/****************************************************************/
+/* HEADER PANEL */
+/****************************************************************/
+
+/* The main header container */
+.headersection .headerpanel {
+	background-color: #fff;
+	padding: 0px;
+	/*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.5) inset;*/
+}
+
+
+.linkpanel li {
+	float: left;
+	margin: 5px 11px 5px 3px;
+}
+
+
+
+.headersection .headerpanel .linkpanel .grouplink {
+	margin-left: 0px;
+}
+
+html > body .headersection .headerpanel .linkpanel .link a {
+	padding: 0;
+	 font-size: 0.8em !important;
+}
+
+
+.headersection .link2panel {
+	border: 0px none transparent;
+    display: block;
+	border-bottom: 1px solid #aaa;
+}
+
+
+#requisitionDescriptionInterface .metalink2 a {
+	color: #1F4F82;
+	padding-top: 10px;
+	display: inline-block;
+}
+
+.requisitionDescription {
+    margin-left: 10px;
+}
+
+
+.mainsection .requisitionDescription .inputbutton {
+	margin-bottom: 10px;
+}
+
+.mainsection .requisitionDescription .editablesection .subtitle {
+    display: none;
+}
+
+.mainsection .requisitionDescription .subtitle {
+    display: none;
+}
+
+.mainsection .requisitionDescription .contentlinepanel {
+	color: #777;
+	font-size: 12px;
+}
+
+.mainsection .requisitionDescription .contentlinepanel .titlepage {
+	color: #777;
+	font-weight: normal;
+}
+
+.mainsection .requisitionDescription .contentlinepanel > .titlepage:first-child {
+	color: #333;
+	font-size: 22px;
+	display: block;
+	margin-bottom: 6px;
+	font-weight: bold;
+}
+
+.mainsection .requisitionDescription .editablesection .contentlinepanel font {
+	font-size: 15px;
+	line-height: 135%;
+}
+
+
+/*#criteriaFields .criteriaFieldInput {
+	height: 20px;
+	line-height: 20px;
+	margin-left: 3px;
+	font-weight: normal;
+}*/
+
+#criteriaFields .criteriaFieldInput {
+    border-color: transparent transparent transparent #999999;
+    border-image: none;
+    border-radius: 0 4px 4px 0;
+    border-style: none none none solid;
+    border-width: 0 0 0 1px;
+    box-shadow: 0 1px 2px #888888 inset;
+-webkit-box-shadow: 0 1px 2px #888888 inset;
+    font-weight: normal;
+    height: 25px;
+    line-height: 24px;
+    margin-left: 3px;
+    width: 180px;
+	background-clip: padding-box;
+	-webkit-background-clip: padding-box;
+}
+
+/*  HEADER SECTION */
+
+.headersection .userpanel { width: auto; }
+.headersection .userpanel { padding: 0 0 0 5px; }
+
+.headersection .headerpanel .userpanel .username {
+	font-size: 11px;
+	color: #333;
+	text-shadow: 0 1px 0 #fff;
+	margin: 0;
+	float: left;
+	font-weight: normal;
+	max-width: 100px;
+}
+
+.headersection #headerPanelContainer .userpanel .username {
+	max-width: 200px;
+}
+
+.headersection .headerpanel .rightpanel .metapanel {
+	font-size: 11px;
+	color: #333;
+	text-shadow: 0 1px 0 #fff;
+	
+}
+
+/*--- subnav ---*/
+
+.headersection .headerpanel .leftpanel, #headerPanelContainer .userpanel {
+	float: none;
+	padding: 9px 5px 9px 10px;
+	background-color: #dcdcdc;
+	border-bottom: 1px solid #999;
+	box-shadow: 0 1px 2px #bbb;
+	-moz-box-shadow: 0 1px 2px #bbb;
+	-webkit-box-shadow: 0 1px 2px #bbb;
+}
+.headersection .headerpanel .leftpanel:after, #headerPanelContainer .userpanel:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+
+.headersection .metalink.nowrap {
+    white-space: normal;
+}
+
+.headersection .headerpanel .rightpanel {
+	float: right;
+	text-align: right;
+	position: absolute;
+	right: 5px;
+	top: -35px;
+}
+
+.headersection .headerpanel .userpanel .separator {
+	color: transparent;
+}
+
+
+/* Header Adjustments */
+#headerPanelContainer { height: auto; padding: 0 0 0 0; }
+
+#headerPanelContainer .userpanel { font-size: 12px; }
+#headerPanelContainer .right-header-info { 
+	font-size: 12px;
+	padding: 0 5px 0 0 !important;
+	position: absolute;
+	top: -27px;
+	right: 5px;
+	word-wrap: break-word;
+}
+
+#headerPanelContainer .right-header-info .username-button { 
+	font-size: 1em;
+	color: #333;
+	font-weight: normal;
+	/*This Makes the Down arrow appear again*/
+	/*background: url("../images/arr_down.png") no-repeat scroll right center transparent !important;*/
+	/*padding: 0px;*/
+}
+
+.right-header-info { padding: 0px !important;}
+
+.headersection .metalink a, .footeraction .footeractionpanel .footergroupactionpanel .metalink2 a, .mainsection .metapanel .metalink a {
+	color: #333 !important;
+	font-size: 11px;
+	float: right;
+	max-width: 200px;
+}
+
+.headersection .headerpanel .clearpanel {
+	display: none;
+}
+
+.headers {
+	font-size: 0.9em;
+}
+
+.mainsection .infojob {
+	color: #333;
+}
+
+.mainsection .tablelistindent .text-inline {
+	margin-left: 6px;
+}
+
+.jobsearch .action a, .blockpanel .metalink a, .mainsection .infopanel .metalink2 a {
+	color: #1F4F82;
+}
+
+.headersection .spacerlink2panel {
+	padding: 0;
+}
+
+.blockpanel .title {
+	color: #444;
+	font-size: 1.3em;
+	margin-top: 25px;
+}
+
+
+.blockpanel .descriptionpanel .text, .myaccount .text, .shiftavailability .shiftcontentpanel, .shiftavailability .daycontentpanel, .alert-message, .mainsection .text, .accessmanagement .page-header-text {
+	color: #333;
+	font-size: 1.12em;
+	line-height: 145%;
+}
+
+.mainsection .myjobpage .statuspanel .text {
+	color: #333;
+	text-shadow: 0 1px 0 #fff;
+}
+
+.blockpanel .inputtextgrouppanel textarea {
+	max-width: 240px;
+	max-height: 110px;
+}
+
+.blockpanel fieldset.input-date-time {
+	width: 155px !important;
+}
+
+.tablelist .blockpanel .labelcontent div select {
+	max-width: 245px;
+}
+
+/*status panel*/
+
+.jobsearch .savecontentpanel, .jobsearch .selectedlink, .jobsearch .contentdatapanel, .jobsearch .boxpanelb2, .jobsearch .boxpanelb3, .jobsearch .boxpanelb4, .jobsearch .linkpanel .link a:hover, .mainsection .myjobpage .statuspanel, .datatrain-focus, .datatrain-focus-left, .datatrain-focus-right, .datatrain-no-focus-left, .datatrain-no-focus-right, .blockpanel .list-header {
+    background-color: #F7F7F7;
+}
+
+.mainsection .myjobpage .statuspanel .text {
+    color: #333333;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.mainsection .searchresults .resultstitlepanel .subtitle, .mainsection .myjobpage .resultstitlepanel .subtitle {
+    color: #666666;
+}
+.mainsection .subtitle, .blockpanel .title, .blockpanel .list-header .subtitle, .blockpanel .entity-title, .myaccount .subtitleblock, .summary .subtitleblock, .shiftavailability .titlesection, .alert-title, .mainsection .searchresults .resultstitlepanel .subtitle, .mainsection .myjobpage .resultstitlepanel .subtitle, .jobsearch .subtitle, .jobsearch .savetitlepanel .subtitle, .olflist .listpanel .subtitle, .messagecenter .page-header-title {
+    color: #333333;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.mainsection .searchresults .text, .mainsection .myjobpage .text, .mainsection .pagerpanel .pagersectionpanel .separator {
+    color: #000000;
+}
+
+.mainsection .searchresults .label, .mainsection .myjobpage .label, .mainsection .pagerpanel .pagersectionpanel .pagerlabel {
+    color: #575757;
+}
+
+.mainsection .tablelist {
+    font-size: 1em;
+}
+
+.mainsection .textindentpanel .inputselect1 {
+    width: 60%;
+}
+
+.add-to-jobcart a { color:#991227; }
+
+/*login page form*/
+
+#dialogTemplate-dialogForm\:login\:main-layout-table { 
+	background-color: #F1F1F1;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    margin: 5px 0 -5px;
+    padding: 10px;
+}
+
+.accessmanagement .block-main-border-fix .dialog-columns-2, .accessmanagement .block-main-border-fix .dialog-columns  {
+    padding: 15px 15px 0;
+    width: auto;
+}
+
+#dialogTemplate-dialogForm\:login\:main-layout-table input {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #CCCCCC;
+    color: #555555;
+    font-size: 1.5em;
+    padding: 8px 11px 6px;
+    width: 100%;
+}
+
+.accessmanagement .dialog-columns-openid-text {
+    display: block;
+    font-size: 1.2em;
+    left: 10px;
+    position: absolute;
+    bottom: -130px;
+    padding-bottom:10px;
+}
+
+.table-columns-openid { 
+    bottom: -185px;
+    display: block;
+    left: -10px;
+    position: absolute;
+}
+
+.accessmanagement .dialog-columns-openid {
+    border-left: 0 solid #7F7F7F; 
+	width: 0;} 
+
+.dialog-columns-openid-link img {
+    width: 35px;
+}
+
+/*login button*/
+#dialogTemplate-dialogForm-login-defaultCmd { 
+	display:block; 
+	margin-bottom: 8px;
+	background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#e80b0b), color-stop(1,#CE0000)); 
+	background-image:-webkit-linear-gradient(top,#e80b0b,#CE0000); 
+	background-image:-moz-linear-gradient(top,#e80b0b,#CE0000);
+	width:95%;
+	padding: 8px 11px;
+    color: #FFFFFF;
+    text-shadow: none;
+}
+
+/*registration pages*/
+
+#dialogTemplate-dialogForm-login-register { width: 95%; padding: 8px 11px; }
+
+#dialogTemplate-dialogForm-userName,
+#dialogTemplate-dialogForm-password,
+#dialogTemplate-dialogForm-passwordConfirm,
+#dialogTemplate-dialogForm-email,
+#dialogTemplate-dialogForm-username,
+#dialogTemplate-dialogForm-emailConfirm { 
+	width:95%;
+    border: 1px solid #CCCCCC;
+    color: #555555;
+    padding: 6px 9px 4px;
+    font-size: 1.3em;
+}
+
+#dialogTemplate-dialogForm-defaultCmd { 
+	display:block; 
+	margin-bottom: 8px;
+	width:95%;
+	padding: 7px 10px;
+	background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#e80b0b), color-stop(1,#CE0000)); 
+	background-image:-webkit-linear-gradient(top,#e80b0b,#CE0000); 
+	background-image:-moz-linear-gradient(top,#e80b0b,#CE0000);
+    color: #FFFFFF;
+    text-shadow: none;
+}
+
+#dialogTemplate-dialogForm-cancel { 
+	display:block; 
+	margin-bottom: 8px;
+	width:95%;
+	padding: 7px 10px;
+}
+
+.accessmanagement .dialog-columns {
+    padding: 5px 0 0; } 
+
+/*
+.mainsection .inputtext, .mainsection .inputselect, .myaccount .inputtext300, .mainsection .inputtext300, .myaccount .inputtextmulti, .mainsection .inputtextmulti, .mainsection .inputtextmulti2, .jobsearch .inputtext, .jobsearch .savepanel .inputtext, .jobsearch .resultpropertiescontentpanel .inputselect, .mainsection .searchresults .sortbypanel .inputselect, .mainsection .listingperpagepanel .inputselect, .mainsection .inputtextmulti3, .blockpanel .input-textarea, .blockpanel .input-text, .blockpanel .input-smaller input, .blockpanel .input-select, .blockpanel .input-date-time select, .blockpanel .sugInput-input, .blockpanel .entity-value select {
+    border: 1px solid #CCCCCC;
+    font-size: 1.3em;
+    padding: 5px 8px 3px;
+}*/
+
+.blockpanel .title { color: #727272; }
+
+.myaccount .title, .myaccount .titleaction, .mainsection .titlepage, .accessmanagement .page-heading-header-title, .myaccount .titleblock, .summary .titleblock {
+    color: #727272; } 
+
+#et-ef-content-ftf-gp-j_id_jsp_1794798042_15pc7-page_2-cpi-cfrmsub-frm-fc3, 
+#et-ef-content-ftf-gp-j_id_jsp_1794798042_15pc7-page_2-cpi-cfrmsub-frm-fc102 strong,
+#et-ef-content-ftf-gp-j_id_jsp_1794798042_15pc7-page_2-cpi-cfrmsub-frm-fc137 strong,
+.no-change-header { 
+	color: #7F0C1F;
+}
+
+.iam-block-main-border-fix { display:block; clear:both; }
+#dialogTemplate-dialogForm-login-forgotUsernameBottom { display:inline !important; margin-right:10px; }
+#dialogTemplate-dialogForm-login-forgotPasswordBottom { display: inline !important; }
+
+/*privacy*/
+
+#dialogTemplate-dialogForm-StatementBeforeAuthentificationContent-ContinueButton, #et-ef-content-ftf-submitCmdBottom { 
+	background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#e80b0b), color-stop(1,#CE0000)); 
+	background-image:-webkit-linear-gradient(top,#e80b0b,#CE0000); 
+	background-image:-moz-linear-gradient(top,#e80b0b,#CE0000);
+	clear: both;
+    display: block;
+    width: 100%;
+    margin-bottom: 7px;
+    color: #FFFFFF;
+    text-shadow: none;
+    padding: 7px 0;
+
+}
+
+/*Save and Continue Buttons*/
+#et-ef-content-ftf-saveContinueCmd, #et-ef-content-ftf-saveContinueCmdBottom,
+#editTemplateMultipart-editForm-content-ftf-saveContinueCmd, #et-ef-content-ftf-submitCmd,
+#editTemplateMultipart-editForm-content-ftf-saveContinueCmdBottom,
+#requisitionDescriptionInterface.UP_APPLY_ON_REQ.row1, #editTemplateMultipart-editForm-content-ftf-saveContinueLegalAgreeCmd,
+#editTemplateMultipart-editForm-content-ftf-saveContinueLegalAgreeCmdBottom { 
+	background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#e80b0b), color-stop(1,#CE0000)); 
+	background-image:-webkit-linear-gradient(top,#e80b0b,#CE0000); 
+	background-image:-moz-linear-gradient(top,#e80b0b,#CE0000);
+	color: #FFFFFF;
+    text-shadow: none;
+    clear: both;
+    margin-bottom: 7px;
+    width: 100%;
+    padding: 8px 0;
+}
+
+#dialogTemplate-dialogForm-StatementBeforeAuthentificationContent-CancelButton { 	
+	clear: both;
+    display: block;
+    width: 100%; 
+    padding: 7px 0;
+}
+
+.mainsection .iframepanel { height:130px; } 
+
+#et-ef-content-ftf-gp-j_id_jsp_1794798042_15pc7-page_0-extServBlock-outputText_takeNowInlineLink { 
+   	background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#e80b0b), color-stop(1,#CE0000)); 
+	background-image:-webkit-linear-gradient(top,#e80b0b,#CE0000); 
+	background-image:-moz-linear-gradient(top,#e80b0b,#CE0000);
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    display: block;
+    font-size: 15px;
+    padding: 7px 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/*apply updates*/
+.myaccount .inputtextmulti, .mainsection .inputtextmulti { width: 90% ;} 
+ 
+input[type="radio"] {
+    margin-bottom: 25px;
+}
+
+/*Remove Work and Remove Eeucation links*/
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-we-wei-0-cmdRemoveWorkExperience,
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-we-wei-1-cmdRemoveWorkExperience,
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-we-wei-2-cmdRemoveWorkExperience,
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-csef-efi-0-cmdRemoveEducation,
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-csef-efi-1-cmdRemoveEducation,
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-csef-efi-2-cmdRemoveEducation,
+#et-ef-content-ftf-gp-j_id_jsp_1794798042_15pc7-page_1-careerSectionCertificationForm-certificationFragmentIter-0-cmdRemoveCertification { 
+    background: url("../images/remove.png") no-repeat scroll 3px 8px #F1F1F1;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+    padding: 9px 9px 9px 26px;
+    text-decoration: none;
+    width: 80%;
+}
+
+/*Move up and Move down links*/
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-csef-efi-0-cmdShiftEducationDown,
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-csef-efi-1-cmdShiftEducationUp { 
+  	background-color: #F1F1F1;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+    padding: 9px 9px 9px 26px;
+    text-decoration: none;
+    width: 80%;
+}
+
+/*Add Work and Add Education links*/
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-we-cmdAddWorkExperience,
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-csef-cmdAddEducation,
+#et-ef-content-ftf-gp-j_id_jsp_1794798042_15pc7-page_1-careerSectionCertificationForm-cmdAdd { 
+    background: url("../images/add.png") no-repeat scroll 5px 9px #F1F1F1;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    display: block;
+    padding: 9px 9px 9px 29px;
+    width: 80%;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+#et-ef-content-ftf-gp-j_id_jsp_1794798042_15pc7-page_1-careerSectionCertificationForm-certificationFragmentIter-0-separatorShiftDown {
+	display: none;
+}
+
+.headersection .headerpanel .leftpanel, .footeraction .footeractionpanel .leftpanel {
+    float: none;
+}
+
+#et-ef-content-ftf-saveAsDraftCmdBottom, #et-ef-content-ftf-saveAsDraftCmdBottom { margin-bottom:10px; padding: 8px 0; }
+
+.blockpanel .separator { display:none; }
+
+.blockpanel .metalink {
+    display: block;
+}
+
+/*work experience fields*/
+#et-ef-content-ftf-gp-j_id_jsp_1794798042_15pc7-page_0-we-wei-0-frm-dv_cs_experience_Employer,
+#et-ef-content-ftf-gp-j_id_jsp_1794798042_15pc7-page_0-we-wei-0-frm-dv_cs_experience_JobFunction, .sugInput-input { width: 247px !important;}
+
+/*quit button*/
+#et-ef-content-ftf-QuitCmd { display: none !important;}
+
+
+/*work experience, move up and down, remove and add tweaks*/
+.blockpanel fieldset.no-border {
+    background-color: #F1F1F1;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px;
+    width: 92% !important;
+    margin-left: -5px;
+}
+
+.blockpanel .questionnaire fieldset.no-border  { background-color: transparent;}
+
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-we-wei-0-cmdRemoveWorkExperience, 
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-we-wei-1-cmdRemoveWorkExperience, 
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-we-wei-2-cmdRemoveWorkExperience, 
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-we-wei-3-lblRemoveWorkExperience,
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-csef-efi-0-cmdRemoveEducation, 
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-csef-efi-1-cmdRemoveEducation, 
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-csef-efi-2-cmdRemoveEducation, 
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-csef-efi-3-cmdRemoveEducation,
+#et-ef-content-ftf-gp-j_id_jsp_1794798042_15pc7-page_1-careerSectionCertificationForm-certificationFragmentIter-0-cmdRemoveCertification {
+    background: url("../images/remove.png") no-repeat scroll 3px 8px #d7d7d7;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+    padding: 9px 9px 9px 26px;
+    text-decoration: none;
+    width: 58px;
+}
+
+.blockpanel .metalink {
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+.blockpanel .separatorhorizontalpanel {
+    clear: both;
+    border-width: 0;
+}
+
+.mainsection .tablelist .separator { display: none; }
+
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-we-wei-0-cmdShiftWorkExperienceUp,
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-we-wei-1-cmdShiftWorkExperienceUp,
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-we-wei-2-cmdShiftWorkExperienceUp,
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-we-wei-3-cmdShiftWorkExperienceUp, 
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-csef-efi-0-cmdShiftEducationUp,
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-csef-efi-1-cmdShiftEducationUp,
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-csef-efi-2-cmdShiftEducationUp,
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-csef-efi-3-cmdShiftEducationUp { 
+ 	background: url("../images/arr_moveup.png") no-repeat scroll 3px 8px #d7d7d7;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    display: block;
+    font-size: 13px;
+    margin-right: -5px;
+    padding: 9px 9px 9px 23px;
+    width: 22px; 
+    }
+
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-we-wei-0-cmdShiftWorkExperienceDown,
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-we-wei-1-cmdShiftWorkExperienceDown,
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-we-wei-2-cmdShiftWorkExperienceDown,
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-we-wei-3-cmdShiftWorkExperienceDown,
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-csef-efi-0-cmdShiftEducationDown, 
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-csef-efi-1-cmdShiftEducationDown, 
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-csef-efi-2-cmdShiftEducationDown, 
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-csef-efi-3-cmdShiftEducationDown { 
+    background: url("../images/arr_movedown.png") no-repeat scroll 3px 8px #d7d7d7;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    display: block;
+    font-size: 13px;
+    padding: 9px 9px 9px 23px;
+    width: 45px;
+}
+
+.descriptionpanel h2.no-change-header {
+    font-family: "OpenSans-Bold";
+    font-weight: normal;
+    margin-bottom: -15px;
+    padding-left: 6px;
+    padding-top: 20px;
+}
+
+#et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-we-cmdAddWorkExperience, #et-ef-content-ftf-gp-j_id_jsp_185929581_15pc7-page_0-csef-cmdAddEducation, #et-ef-content-ftf-gp-j_id_jsp_1794798042_15pc7-page_1-careerSectionCertificationForm-cmdAdd { margin-top:10px;}
+
+#et-ef-content-ftf-quitCmdBottom { margin-bottom:10px;}
+
+/* remove bg and margin from fieldset on privacy page */
+#dialogTemplate-dialogForm .blockpanel fieldset {
+    background-color: #FFFFFF;
+    margin-left: 0;
+}
+
+
+.pager li {
+    display: inline-block;
+} 
+
+
+/* adjustments for media (video, pics in the content)*/
+.editablesection iframe, .editablesection img { width: 90% !important; }
+
+/****************************************************************/
+/* CLIENT CUSTOMIZATIONS */
+/****************************************************************/
+
+/*Overall font style - update the font family if you want to chage the font stlye throughout the site*/
+body, body .masterbody, .alert-frame, .sugInput-sug, .callout, .blockpanel .input-textarea, .blockpanel .input-text, .blockpanel .input-smaller input, .blockpanel .input-select, .blockpanel .input-date-time select, .blockpanel .sugInput-input, .blockpanel .entity-value select, .blockpanel .inputtextmulti, .blockpanel .inputtextmulti2, .mainsection {
+	font-family: "OpenSans-Regular";
+}
+
+/*Link colors - the following three sections specify the link color.  This should typically be the same color*/
+a:link, a:visited { 
+	color: #1F4F82;
+}
+
+/*Hover link color*/
+a:hover, a:active {
+	color: #1F4F82;
+}
+
+/*More link colors*/
+.mainsection .metalink2 a, .mainsection .pagerpanel .pagersectionpanel .pagerlink a, .blockpanel .loc-action-btn a,
+.mainsection .textlink a, .myaccount .metalink2 a, .accessmanagement .link-small a, .blockpanel .list .listpanel .metalink2 a,
+.footersection .poweredbytaleolink a, .messagecenter .toolbar a, .messagecenter .list-column a, .alert-button-panel a,
+.messagecenter .section-name a, .headersection .headerpanel .linkpanel .link a,  .mainsection .infopanel .metalink2 a,
+.mainsection .titlelink a, .jobsearch .titlelink a, .mainsection .jobcontentpanel .metalink2 a,
+.masterbody .mainsection .requisitionDescription #requisitionDescriptionInterface .metalink2 a {
+	color: #1F4F82;
+} 
+
+/*Job results save job and share links - these links are only displayed if the user highlights a given job result*/
+.add-to-jobcart a { color:#F58025; }
+
+/*background color of the top header that contains your logo - default is white*/
+.logo_hldr { background-color: #FFFFFF; }
+
+/*navigation - this is the main navigation bar (Job Search, My Job Page) and controls the color of the selected tab*/
+.headersection .headerpanel .linkpanel .selectedlink {
+    background-color: #E80B0B;
+    color: #FFFFFF;
+}
+
+/*background and border colors for search bar - dark grey by default*/
+.jobsearch .topSearchPanel {
+    background-color: #606060;
+    border-bottom: 1px solid #333333;
+    border-top: 1px solid #333333; 
+} 
+
+/*title on Job detail page*/
+.mainsection .requisitionDescription .contentlinepanel > .titlepage:first-child {
+    color: #333333;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/*titles - update the style and color of the page titles on the apply process pages*/
+h1, .no-change-header {
+    font-family: "OpenSans-Bold";
+    font-weight: normal;
+    color: #333333;
+}
+
+/*Subtitles - update the style and color of the sub titles on the apply process pages*/
+.myaccount .title, .myaccount .titleaction, .mainsection .titlepage, .accessmanagement .page-heading-header-title, .blockpanel .title,
+.myaccount .titleblock, .summary .titleblock {
+    color: #727272;
+}
+
+/*apply button on job listings page*/
+.jobListPanel .result-list-button {
+    background-color: #E80B0B;
+    color: #ffffff;
+} 
+
+/* General button styling, default is gray */
+#et-ef-content-flowTemplate-LegalDisclaimerPage-legalDisclaimerContinueButton,
+#et-ef-content-flowTemplate-LegalDisclaimerPage-CancelButton, 
+#dialogTemplate-dialogForm-StatementBeforeAuthentificationContent-ContinueButton, 
+#dialogTemplate-dialogForm-StatementBeforeAuthentificationContent-CancelButton, 
+.mainsection .inputbutton, .accessmanagement .nav-btn {
+	background-color: #E5E5E5;
+	border: 1px solid #949494;
+	color: #444444;
+	font-family: 'OpenSans-SemiBold',Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+/* Save and Continue buttons on job apply form, default is red */
+#et-ef-content-ftf-saveContinueCmd, #et-ef-content-ftf-saveContinueCmdBottom,
+#editTemplateMultipart-editForm-content-ftf-saveContinueCmd, #et-ef-content-ftf-submitCmd,
+#editTemplateMultipart-editForm-content-ftf-saveContinueCmdBottom,
+#requisitionDescriptionInterface.UP_APPLY_ON_REQ.row1, #editTemplateMultipart-editForm-content-ftf-saveContinueLegalAgreeCmd,
+#dialogTemplate-dialogForm-login-defaultCmd, #editTemplateMultipart-editForm-content-ftf-saveContinueLegalAgreeCmdBottom,
+#et-ef-content-ftf-submitCmdBottom, #dialogTemplate-dialogForm-defaultCmd,
+#dialogTemplate-dialogForm-StatementBeforeAuthentificationContent-ContinueButton { 
+	background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#E80B0B), color-stop(1,#CE0000)); 
+	background-image:-webkit-linear-gradient(top,#E80B0B,#CE0000); 
+	background-image:-moz-linear-gradient(top,#E80B0B,#CE0000);
+	color: #FFFFFF;
+}
+
+/*if you want to hide the continue, save as draft and quit buttons at the top of the apply form, uncomment the section below*/
+/*.mainsection .headerpanel .buttongrouppanel2, #et-ef-content-ftf-saveContinueCmd, #et-ef-content-ftf-saveAsDraftCmd,
+#et-ef-content-ftf-quitCmd { display: none !important; }
+.mainsection .footeraction .footeractionpanel .buttongrouppanel2 { display: block;}*/

@@ -1,0 +1,140 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+html {
+  position: relative;
+  min-height: 100%;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+.carousel, footer {
+/*-webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.2);*/
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 320px) and (max-width: 768px) {
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+  color: #ee1c2e;
+  text-decoration: underline;
+  background-color: transparent;
+  box-shadow: none !important;
+}
+.carousel {
+  margin-top: 0px;
+}
+.marketing img, .marketing iframe {
+  margin-top: 15px;
+}
+.breadcrumb-container .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+span.dot-divider {
+  margin: 0px 5px;
+}
+footer {
+  height: 80px;
+}
+body {
+  margin-bottom: 80px;
+}
+.navbar-wrapper {
+  position: relative;
+}
+.navbar-header {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+}
+
+@media (min-width:1200px) and (max-width: 1440px) {
+.navbar-nav>li>a {
+  padding-top: 0px;
+  padding-bottom: 15px;/*padding-left: 10px;
+      padding-right: 10px;*/
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: left;
+  vertical-align: top;
+}
+.navbar .navbar-collapse {
+  text-align: center;
+}
+#homeCarousel {
+  margin-top: 145px;
+}
+}
+
+/*END of @media*/	
+@media (min-width: 768px) and (max-width: 1199px) {
+#homeCarousel {
+  margin-top: 125px;
+}
+/* Navbar positioning foo */
+.navbar-wrapper {
+/*margin-top: 20px;*/
+}
+.navbar-wrapper .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: left;
+  vertical-align: top;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.navbar-nav>li>a {
+  padding-top: 12px;
+}
+.navbar-btn {
+  margin-top: 21px;
+  margin-bottom: 21px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.navbar-nav>li>a.btn {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+/* The navbar becomes detached from the top, so we round the corners */
+.navbar-wrapper .navbar {
+  border-radius: 4px;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+  color: #ee1c2e;
+  text-decoration: underline;
+  background-color: transparent;
+  box-shadow: none;
+}
+.breadcrumb-container, .breadcrumb {
+  margin-top: 125px !important;
+}
+.thumbnail .caption {
+  min-height: 280px !important;
+}
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+.nav>li>a {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.thumbnail .caption {
+  min-height: auto !important;
+}
+}

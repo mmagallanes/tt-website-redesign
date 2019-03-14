@@ -1,0 +1,31 @@
+var StopLooping_Extension=false; //When set to true, JS stop waiting for jQuery loaded
+console.log("Extension v.20180303.03");
+function process_TT_menu() {
+	var ul = document.getElementById("TTMainMenu");
+	var items = ul.getElementsByTagName("li");
+	//console.log("entering process_TT_menu");
+	if (ul.style.display=="none" ||ul.style.display=="" ) { 
+		ul.style.display="block"; 
+	}
+	else { 
+		ul.style.display="none";
+	}
+}
+
+function waitJQuery_Extension() {
+	var loopMax=0;
+	setTimeout(function() {
+		loopMax++;
+		if (typeof jQuery == 'undefined' && loopMax <= 100 && !StopLooping_Extension) 
+		{
+			waitJQuery_Extension();
+		}
+		else {			
+				$("#ToggleImageMenu").click(process_TT_menu);
+				$(window).resize(function(){
+						document.getElementById("TTMainMenu").style.display=""; //Reset to initial				
+				});
+			}
+	}, 100);
+}
+waitJQuery_Extension();
